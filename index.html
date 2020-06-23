@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
-
-  <title>Стоимость обучения с преимуществами</title>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet"> -->
+  <title>Стоимость обучения без преимуществ</title>
 </head>
 <body>
   <header class="header">
@@ -15,7 +17,7 @@
   </header>
   <main class="main">
 
-    <section class="main__promo advantages">
+    <section class="main__promo">
 
       <article>
         <p>скидка</p>
@@ -32,21 +34,15 @@
     </section>
     <section class="main__form">
       <h2>Запишитесь на курс</h2>
-      <ul>
-        <li>Телефон</li>
-        <li>Телефон</li>
-        <li>Телефон</li>
-        <li>Телефон</li>
-      </ul>
       <div>
         <p>Старт курса <span>15 июля</span></p>
         <p>Осталось <span>12 мест</span></p>
       </div>
-      <form action="" novalidate>
-        <input type="text" name="name" placeholder="Имя" required>
-        <input type="tel" name="tel" placeholder="Телефон" required>
-        <input type="email" name="mail" placeholder="Email" id="mail" required pattern="\S+@[a-z]+.[a-z]+">
-        <label  for="check2"><input type="checkbox" id="check2" required checked>
+      <form action="">
+        <input type="text" name="name" placeholder="Имя" id="name" required="" pattern="[A-Za-zА-Яа-я\s]+">
+        <input type="tel" name="tel" placeholder="Телефон" id="tel" required="" pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\.0-9]*$">
+        <input type="email" name="mail" placeholder="Email" id="mail" required="" pattern="\S+@[a-z]+.[a-z]+">
+        <label for="check"><input type="checkbox" id="check" required="" checked>
           <span class="main__form-checked"> Я согласен с условиями обработки <a href="#">персональных данных</a></span> 
         </label>
         <button type="submit">Записаться</button>

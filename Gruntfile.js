@@ -50,17 +50,6 @@ module.exports = function(grunt) {
         }
       },
 
-      uglify: {
-        options: {
-            mangle: false
-        },
-        my_target: {
-            files: {
-              'build/js/script.js': ['js/script.js']
-            }
-        }
-      },
-
       csso: {
         style: {
           options: {
@@ -162,9 +151,9 @@ module.exports = function(grunt) {
 
 
   });
-  // grunt.loadNpmTasks('grunt-contrib-uglify');
+
   grunt.registerTask("serve", ["browserSync", "watch"]);
-  grunt.registerTask("build", ["clean", "copy", "svg_cleaner", "picture", "less", "postcss", "csso", "posthtml", "uglify"]);
+  grunt.registerTask("build", ["clean", "copy", "svg_cleaner", "picture", "less", "postcss", "csso", "posthtml"]);
   grunt.registerTask("picture", [/*"cwebp", "imagemin",*/ "svgstore"]);
 
 };
